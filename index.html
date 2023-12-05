@@ -4,19 +4,285 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-            },
-          },
-        },
-      };
-    </script>
+    <title>Panda-Commerce</title>
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/?size=96&id=80857&format=png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">Hello Panda Bou</h1>
+    <nav>
+      <div
+        class="content-box flex flex-col md:flex-row justify-between items-center max-w-[1125px] mx-auto py-5"
+      >
+        <div class="logo flex items-center">
+          <img
+            src="https://img.icons8.com/?size=96&id=80857&format=png"
+            width="40px"
+            alt=""
+          />
+          <h2 class="text-2xl font-bold">PANDA</h2>
+        </div>
+
+        <div class="search relative hidden lg:block">
+          <input
+            class="w-[300px] p-2 outline-none rounded-full bg-slate-100"
+            type="text"
+            placeholder="Search your item"
+            value=""
+          />
+          <i class="fa-solid absolute right-3 top-3 fa-magnifying-glass"></i>
+        </div>
+        <div class="menu space-x-4">
+          <a href="">Home</a>
+          <a href="">Order</a>
+          <a href="">About Us</a>
+          <a href="">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="hero">
+        <div
+          class="content-box flex-col lg:flex-row bg-[#FEEAE9] mt-6 p-5 rounded-lg max-w-[1125px] mx-auto gap-10 flex items-center justify-between"
+        >
+          <div class="hero-info text-center lg:text-left flex-1 space-y-3">
+            <h1 class="text-5xl font-bold">Mi LED TV 4A PRO 32</h1>
+            <p class="">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <h2 class="text-4xl text-pink-600 font-semibold">$1299</h2>
+            <button
+              class="bg-pink-500 text-white py-3 space-x-2 px-6 rounded-lg shadow-inner"
+            >
+              Buy Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="hero-image flex-1">
+            <img
+              class="max-h-[525px] ml-auto"
+              src="./images/banner-images/tv.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="categories">
+        <div
+          class="content-box space-y-4 content-box max-w-[1125px] mx-auto py-10"
+        >
+          <h1 class="text-4xl font-bold">Categories</h1>
+          <div
+            class="flex p-3 flex-col md:flex-row gap-10 justify-between items-center"
+          >
+            <div
+              class="w-full card p-5 rounded-lg flex-1 bg-gradient-to-tl from-yellow-400 to-yellow-500 flex justify-between items-center"
+            >
+              <h2 class="text-white text-3xl font-bold">Watch</h2>
+              <div class="img">
+                <img src="./images/categories/watch.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="w-full card p-5 rounded-lg flex-1 bg-gradient-to-tl from-pink-400 to-pink-600 flex justify-between items-center"
+            >
+              <h2 class="text-white text-3xl font-bold">Bags</h2>
+              <div class="img">
+                <img src="./images/categories/bag.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="w-full card p-5 rounded-lg flex-1 bg-gradient-to-tl from-blue-400 to-blue-600 flex justify-between items-center"
+            >
+              <h2 class="text-white text-3xl font-bold">Shoes</h2>
+              <div class="img">
+                <img src="./images/categories/shoes.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products-shoes" class="bg-slate-100">
+        <!-- shoes  -->
+        <div class="content-box max-w-[1125px] mx-auto py-10">
+          <div class="item-name">
+            <div class="flex justify-between items-start">
+              <h1 class="text-3xl font-bold">Shoes</h1>
+              <a class="text-[#FF9D00]" href="#">Show All</a>
+            </div>
+          </div>
+          <div
+            class="item-products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-5 pb-20"
+          >
+            <div class="product p-6 bg-white rounded-lg">
+              <div class="image">
+                <img src="./images/shoes/shoe-1.png" alt="" />
+              </div>
+              <div class="text-center space-y-4">
+                <h2 class="text-2xl font-bold">Reebok Dart Men's Shoes</h2>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint.
+                </p>
+
+                <h4 class="text-2xl font-semibold">$1289</h4>
+                <div class="btn">
+                  <button class="bg-black px-3 py-2 text-white rounded">
+                    Buy Now <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product p-6 bg-white rounded-lg">
+              <div class="image">
+                <img src="./images/shoes/shoe-2.png" alt="" />
+              </div>
+              <div class="text-center space-y-4">
+                <h2 class="text-2xl font-bold">Reebok Pump</h2>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint.
+                </p>
+
+                <h4 class="text-2xl font-semibold">$1289</h4>
+                <div class="btn">
+                  <button class="bg-black px-3 py-2 text-white rounded">
+                    Buy Now <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product p-6 bg-white rounded-lg">
+              <div class="image">
+                <img src="./images/shoes/shoe-3.png" alt="" />
+              </div>
+              <div class="text-center space-y-4">
+                <h2 class="text-2xl font-bold">Reebok All Terrain</h2>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint.
+                </p>
+
+                <h4 class="text-2xl font-semibold">$1289</h4>
+                <div class="btn">
+                  <button class="bg-black px-3 py-2 text-white rounded">
+                    Buy Now <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="products-bag" class="bg-slate-100">
+        <!-- shoes  -->
+        <div class="content-box max-w-[1125px] mx-auto py-10">
+          <div class="item-name">
+            <div class="flex justify-between items-start">
+              <h1 class="text-3xl font-bold">BackPack</h1>
+              <a class="text-[#FF9D00]" href="#">Show All</a>
+            </div>
+          </div>
+          <div
+            class="item-products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-5 pb-20"
+          >
+            <div class="product p-6 bg-white rounded-lg">
+              <div class="image">
+                <img src="./images/bags/bag-1.png" alt="" />
+              </div>
+              <div class="text-center space-y-4">
+                <h2 class="text-2xl font-bold">Ison Backpack</h2>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint.
+                </p>
+
+                <h4 class="text-2xl font-semibold">$1289</h4>
+                <div class="btn">
+                  <button class="bg-black px-3 py-2 text-white rounded">
+                    Buy Now <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product p-6 bg-white rounded-lg">
+              <div class="image">
+                <img src="./images/bags/bag-2.png" alt="" />
+              </div>
+              <div class="text-center space-y-4">
+                <h2 class="text-2xl font-bold">Biaowang Backpack</h2>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint.
+                </p>
+
+                <h4 class="text-2xl font-semibold">$1289</h4>
+                <div class="btn">
+                  <button class="bg-black px-3 py-2 text-white rounded">
+                    Buy Now <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product p-6 bg-white rounded-lg">
+              <div class="image">
+                <img src="./images/bags/bag-3.png" alt="" />
+              </div>
+              <div class="text-center space-y-4">
+                <h2 class="text-2xl font-bold">Dxyizu WS54 Smart</h2>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint.
+                </p>
+
+                <h4 class="text-2xl font-semibold">$1289</h4>
+                <div class="btn">
+                  <button class="bg-black px-3 py-2 text-white rounded">
+                    Buy Now <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="newsletter">
+        <div
+          class="content-box my-14 bg-pink-100 max-w-[1125px] h-[455px] flex justify-center items-center mx-auto rounded-lg flex-col gap-5"
+        >
+          <h1 class="text-3xl">LET'S STAY IN TOUCH</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Temporibus, alias!
+          </p>
+          <div class="search flex">
+            <input
+              type="text"
+              class="outline-pink-300 md:min-w-[576px] rounded-s-lg outline-0 h-full"
+            />
+            <button
+              class="bg-pink-500 me-1 rounded-e-lg text-white py-3 px-6 shadow-inner"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>
